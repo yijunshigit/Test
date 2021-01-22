@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5060" started-at="2020-12-11T02:48:54Z" finished-at="2020-12-11T02:48:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5060" started-at="2020-12-11T02:48:54Z" finished-at="2020-12-11T02:48:59Z">
+      <class name="testgit.Driver">
+        <test-method status="PASS" signature="start()[pri:0, instance:testgit.Driver@2a2d45ba]" name="start" duration-ms="5040" started-at="2020-12-11T10:48:54Z" finished-at="2020-12-11T10:48:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+      </class> <!-- testgit.Driver -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
