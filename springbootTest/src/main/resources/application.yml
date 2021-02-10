@@ -1,0 +1,18 @@
+logging:
+ path: logs
+ file: mylog.log
+
+spring:
+ application:
+        name: myTest
+ datasource:
+   driver-class-name: com.mysql.cj.jdbc.Driver
+   url: jdbc:mysql://192.168.162.1:3306/test
+   username: root
+   password: root123
+
+mybatits:
+ type-aliases-package: demo.example.moudle
+ mapper-locations:
+  - mapper/*.xml
+
