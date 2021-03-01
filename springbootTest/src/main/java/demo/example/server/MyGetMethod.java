@@ -1,26 +1,23 @@
 package demo.example.server;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.net.URLStreamHandler;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Date;
+
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.security.auth.message.callback.PrivateKeyCallback.Request;
-import javax.servlet.http.HttpServletRequest;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.mybatis.spring.SqlSessionTemplate;
 
 import demo.example.util.GetScrect;
 
 @RestController
 public class MyGetMethod {
+	
+	@Autowired
+	private SqlSessionTemplate template;
 
 	@RequestMapping(value="/hello",method=RequestMethod.GET)
 	public String myGetList(){
@@ -46,6 +43,12 @@ public class MyGetMethod {
 		GetScrect screct=new GetScrect();
 		String adr=screct.getScrect(email, url, key);
 		return adr;
+	}
+	
+	@RequestMapping(value="/getUserCount", method=RequestMethod.GET)
+	
+	public int getUserCount(){		
+		return template.selectOne("getUserCount");
 	}
 
 
