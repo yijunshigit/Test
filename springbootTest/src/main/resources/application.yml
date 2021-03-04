@@ -3,16 +3,15 @@ logging:
  file: mylog.log
 
 spring:
- application:
+  application:
         name: myTest
- datasource:
-   driver-class-name: com.mysql.cj.jdbc.Driver
-   url: jdbc:mysql://192.168.162.1:3306/test
-   username: root
-   password: root123
+  datasource:
+       driver-class-name: com.mysql.cj.jdbc.Driver
+       url: jdbc:mysql://192.168.125.1:3306/test
+       username: root
+       password: root123
 
-mybatits:
- type-aliases-package: demo.example.moudle
- mapper-locations:
-  - mapper/*.xml
-
+mybatis:
+    type-aliases-package: com.course.model
+    mapper-locations:
+       - mapper/*

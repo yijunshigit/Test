@@ -3,7 +3,7 @@
 
 <configuration>
 	<typeAliases>
-		<package name="demo.example.moudle"/>
+		<package name="demo.example.moudel"/>
 	</typeAliases>
 	
 	<mappers>
