@@ -12,4 +12,14 @@
     	insert into user(name,age,sex)
     	values(#{name},#{age},#{sex});
     </insert>
+    
+    <update id="updateUser" parameterType="demo.example.moudel.User">
+    	 update user set name=#{name},age=#{age}
+        where id=#{id};
+    </update>
+    
+    <delete id="delUser" parameterType="Integer">
+    	delete from user where id=#{id};
+    
+    </delete>
 </mapper>
