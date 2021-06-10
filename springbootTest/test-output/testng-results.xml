@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5498" started-at="2021-04-30T03:24:38Z" finished-at="2021-04-30T03:24:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5498" started-at="2021-04-30T03:24:38Z" finished-at="2021-04-30T03:24:44Z">
+      <class name="demo.example.test.GetNoteTep">
+        <test-method status="PASS" signature="login()[pri:0, instance:demo.example.test.GetNoteTep@27c20538]" name="login" is-config="true" duration-ms="14" started-at="2021-04-30T11:24:38Z" finished-at="2021-04-30T11:24:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="getCalloutTask()[pri:0, instance:demo.example.test.GetNoteTep@27c20538]" name="getCalloutTask" duration-ms="3785" started-at="2021-04-30T11:24:38Z" finished-at="2021-04-30T11:24:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCalloutTask -->
+        <test-method status="PASS" signature="getNoteTemple()[pri:0, instance:demo.example.test.GetNoteTep@27c20538]" name="getNoteTemple" duration-ms="1675" started-at="2021-04-30T11:24:42Z" finished-at="2021-04-30T11:24:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNoteTemple -->
+      </class> <!-- demo.example.test.GetNoteTep -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
