@@ -32,4 +32,5 @@ public class MyPostMethod {
 	public int delUser(@RequestParam int id){
 		return template1.delete("delUser", id);
 	}
+	
 }

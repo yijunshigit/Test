@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="测试用">
+	
+	<test name="呼叫中心" verbose="2">
+		<classes> 
+			<class name="com.example.cases.GetUserCount">
+				<methods >
+					<include name="getNoteTemple"/>
+					<include name="getCalloutTask"/>				
+				</methods>			
+			</class>
+			<class name="com.example.cases.Customer">
+				<methods>
+					<include name="creatCustomer"/>
+					<include name="customerInfo"/>
+				</methods>
+			</class>
+		</classes>	
+	</test>
+	
+	<listeners>
+        <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+        <!--<listener class-name="com.tester.extend.demo.ExtentTestNGIReporterListenerOld" />-->
+        <listener class-name="com.example.config.ExtentTestNGIReporterListener" />
+    </listeners>
+</suite>
